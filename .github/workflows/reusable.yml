@@ -11,6 +11,7 @@ on:
         result:
           description: The result of the deployment operation
           value: ${{ jobs.deploy.outputs.outcome }}
+          type: string
 jobs:
   deploy:
     outputs:
